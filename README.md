@@ -98,7 +98,7 @@ Pass the first data object from the `tweets`  as a prop to the `Tweet` component
 <!-- src/App.vue -->
 <!-- ... -->
 
-<Tweet /** maybe you need something here from the prev. iteration */ :tweet="tweet"  />
+<Tweet /** maybe you need something here from the prev. iteration */ /** ADD HERE THE TWEET PROP **/  />
 ```
 
 **Display the tweet content in the `Tweet` component**

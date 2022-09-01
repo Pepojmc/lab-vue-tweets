@@ -82,6 +82,12 @@ Once you initially run the app you should see the following:
 
 In `App.vue`, we have an array named `tweetsArray` that holds objects representing tweets.  We will use the `Tweet` component to display these *tweet* objects. In the `Tweet` we will display the user's `name`, user's `image`, user's `handle`, tweet `timestamp` and the `message`. 
 
+**Loop all tweets**
+In you `App.vue`, call the Tweet component as many times as the length of the tweetsArray.
+
+You should see something similar to this:
+
+![image](https://user-images.githubusercontent.com/108828282/187871286-3f98b0c2-535e-4888-b73b-67bab5781e59.png)
 
 
 **Pass the tweet as a prop**
@@ -92,7 +98,7 @@ Pass the first data object from the `tweets`  as a prop to the `Tweet` component
 <!-- src/App.vue -->
 <!-- ... -->
 
-<Tweet tweet="tweets" />
+<Tweet :tweet="tweet" />
 ```
 
 **Display the tweet content in the `Tweet` component**

@@ -53,11 +53,15 @@ Add the following stylesheet in the `head` of the `index.html` page:
        />
    ```
    
-Option 2. Add a dependency. This will minify and reduce your JS file in a single file.
+Option 2. Add a dependency. This will minify and reduce your JS file in a single file. Also, we ensure we have the last version of the package: https://fontawesome.com/v6/icons/user?s=solid&f=classic
+
 - Install the depency: `npm install --save @fortawesome/fontawesome-free`
 - Import the dependcy in your `main.js` before the `createApp`
 
 `import '@fortawesome/fontawesome-free/js/all.js';`
+
+![image](https://user-images.githubusercontent.com/108828282/187868891-d4765715-d91a-4328-9bd8-3f5b8190e3dd.png)
+
 
 ## Instructions
 

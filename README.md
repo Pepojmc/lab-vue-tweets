@@ -111,6 +111,11 @@ Once done, your `Tweet` component should display the following content:
 
 ![Tweet component after passing the "tweets" prop](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-frontend-vue/lab-vue-tweets-2.png)
 
+And all `Tweet` together:
+
+![image](https://user-images.githubusercontent.com/108828282/187872323-f9a43833-1a41-47b4-b613-dc7e25c77161.png)
+
+
 
 ### Iteration 3 | Create the Components
 

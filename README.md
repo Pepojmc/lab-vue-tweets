@@ -94,16 +94,16 @@ You should see something similar to this:
 
 Pass the first data object from the `tweets`  as a prop to the `Tweet` component:
 
-```vue
-<!-- src/App.vue -->
-<!-- ... -->
-
 Here you have two options. Depending on which one you chose, you must change the next steps.
 
 Option 1: Use a `tweet` prop, which has user, message and timestamp (to me, sounds more logical)
 Option 2: Use three props: user, message and timestamp (better for practising props).
 
 So, *I recommended Option 2 for this lab*, but keep in mind that both are correct and depends on you, as a programmer who defines the component, how your component should be used. Is it better that the component has a single prop called `tweet`? So, that object how should it be? But if you define three props, you are forcing the parent component to use that three props and less errors may occur.
+
+```vue
+<!-- src/App.vue -->
+<!-- ... -->
 
 <Tweet /** maybe you need something here from the prev. iteration */ /** add here the tweet prop or many props  **/  />
 ```
@@ -144,7 +144,12 @@ You will do it in the next iterations, one step at a time. You will be replacing
 
 <hr>
 <br>
-</details>
+
+**----------------------**
+**----------------------**
+**WARNING! Next iterations may have some mistakes! Maybe some v-bind (or the shorthand :) is missing on purpos. Do not copy-paste. **
+**----------------------**
+**----------------------**
 
 ### Iteration 4 | ProfileImage Component
 

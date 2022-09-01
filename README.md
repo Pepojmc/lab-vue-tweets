@@ -98,7 +98,14 @@ Pass the first data object from the `tweets`  as a prop to the `Tweet` component
 <!-- src/App.vue -->
 <!-- ... -->
 
-<Tweet /** maybe you need something here from the prev. iteration */ /** ADD HERE THE TWEET PROP **/  />
+Here you have two options. Depending on which one you chose, you must change the next steps.
+
+Option 1: Use a `tweet` prop, which has user, message and timestamp (to me, sounds more logical)
+Option 2: Use three props: user, message and timestamp (better for practising props).
+
+So, *I recommended Option 2 for this lab*, but keep in mind that both are correct and depends on you, as a programmer who defines the component, how your component should be used. Is it better that the component has a single prop called `tweet`? So, that object how should it be? But if you define three props, you are forcing the parent component to use that three props and less errors may occur.
+
+<Tweet /** maybe you need something here from the prev. iteration */ /** add here the tweet prop or many props  **/  />
 ```
 
 **Display the tweet content in the `Tweet` component**
@@ -132,46 +139,6 @@ In the following iterations, you will need to refactor the `Tweet` component. Yo
 
 ![Example - Refactoring the "Tweet" component](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-frontend-vue/lab-vue-tweets-3.png)
 <br>
-
-**When done with all of the iterations**, the final version of your `Tweet` component will look like this:
-
-<details>
-<summary>Click to see the code</summary>
-
-```vue
-<!-- FINAL VERSION -->
-
-<template>
-  <div className="tweet">
-    <ProfileImage image="user.image" />
-
-    <div className="body">
-      <div className="top">
-        <User userData="user" />
-        <Timestamp time="timestamp" />
-      </div>
-
-      <Message message="message" />
-      <Actions />
-    </div>
-
-    <i class="fas fa-ellipsis-h"></i>
-  </div>
-</template>
-
-<script>
-export default {
-  name: Tweet,
-  props: {
-    user: Object,
-    timestamp: String,
-    message: String
-  }
-}
-</script>
-```
-
-:heavy_exclamation_mark: Don't copy-paste the above code directly into the `Tweet` component!
 
 You will do it in the next iterations, one step at a time. You will be replacing the parts of HTML as you create each new component.
 

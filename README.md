@@ -20,8 +20,8 @@ We will be cloning an existing piece of UI from a popular app, Twitter. Let's ge
 
   ```bash
   $ cd lab-vue-tweets
-  $ yarn install
-  $ yarn dev
+  $ npm install
+  $ npm run dev
   ```
 
 ## Submission
@@ -39,7 +39,10 @@ We will be cloning an existing piece of UI from a popular app, Twitter. Let's ge
 ## Getting Started
    
 
-1. We will use [Font Awesome](https://fontawesome.com/v5.15/icons?d=gallery&p=1) for the icons in our app. Add the following stylesheet in the `head` of the `index.html` page:
+We will use [Font Awesome](https://fontawesome.com/v5.15/icons?d=gallery&p=1) for the icons in our app. 
+
+Option 1. NOT RECOMMENDED but easier. Add a CDN.
+Add the following stylesheet in the `head` of the `index.html` page:
   
    ```html
        <link
@@ -49,6 +52,12 @@ We will be cloning an existing piece of UI from a popular app, Twitter. Let's ge
          crossorigin="anonymous"
        />
    ```
+   
+Option 2. Add a dependency. This will minify and reduce your JS file in a single file.
+- Install the depency: `npm install --save @fortawesome/fontawesome-free`
+- Import the dependcy in your `main.js` before the `createApp`
+
+`import '@fortawesome/fontawesome-free/js/all.js';`
 
 ## Instructions
 

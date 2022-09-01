@@ -145,11 +145,11 @@ You will do it in the next iterations, one step at a time. You will be replacing
 <hr>
 <br>
 
-**----------------------**
-**----------------------**
-**WARNING! Next iterations may have some mistakes! Maybe some v-bind (or the shorthand :) is missing on purpos. Do not copy-paste. **
-**----------------------**
-**----------------------**
+### ----------------------
+### ----------------------
+### WARNING! Next iterations may have some mistakes! Maybe some `v-bind` (or the shorthand `:` ) is missing on purpos. Do not copy-paste.
+### ----------------------
+### ----------------------
 
 ### Iteration 4 | ProfileImage Component
 
